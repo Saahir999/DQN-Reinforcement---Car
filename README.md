@@ -8,6 +8,7 @@ A self driving car implemented based on Deep Q Learning using PyTorch
 5. 1 hidden layer
 6. Inputs are lines of view of driver in a car
 7. Non-prioritized experience replay
+8. Hitbox of the car is 4 blue dots at the vertices
 
 
 
@@ -15,8 +16,8 @@ A self driving car implemented based on Deep Q Learning using PyTorch
 
 
 
-7. Q value chosen using softmax
-8. Output is moving forward or turning in either direction -> 3 outputs to choose from
+9. Q value chosen using softmax
+10. Output is moving forward or turning in either direction -> 3 outputs to choose from
 
 #TODO
 1. using one track to train and testing learning on others
