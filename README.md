@@ -28,7 +28,7 @@ A self driving car implemented based on Deep Q Learning using PyTorch
 6. implement greater goals like a destination and checkpoint rewards
 7. feed self.angle 
 8. give penalty for turning 
-9. pass differential change in radar
+9. pass differential change in radar angle as input
 10. lower degree of rotation per decision
 11. make rewards cumulative
 12. make some radars more important by rewarding based on their inputs
