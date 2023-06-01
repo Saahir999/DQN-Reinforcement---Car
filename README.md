@@ -8,7 +8,12 @@ A self driving car implemented based on Deep Q Learning using PyTorch
 5. 1 hidden layer
 6. Inputs are lines of view of driver in a car
 7. Non-prioritized experience replay
+
+
+
 ![image](https://github.com/Saahir999/DQN-Reinforcement---Car/assets/77979559/a83a2983-d972-477d-9639-a0958d4b4c95)
+
+
 
 7. Q value chosen using softmax
 8. Output is moving forward or turning in either direction -> 3 outputs to choose from
