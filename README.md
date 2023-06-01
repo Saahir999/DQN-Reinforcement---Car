@@ -23,7 +23,7 @@ A self driving car implemented based on Deep Q Learning using PyTorch
 1. using one track to train and testing learning on others
 2. using multiple tracks to train and test
 3. Dynamic start and endpoint
-4. Prioritized experience replay with priority on the basis of higher error and latest experince also being considered
+4. Prioritized experience replay with priority on the basis of higher error and latest experience also being considered
 5. implement jerk to give variable accel with opposing jerk similar to velocity for better simulation (?)
 6. implement greater goals like a destination and checkpoint rewards
 7. feed self.angle 
