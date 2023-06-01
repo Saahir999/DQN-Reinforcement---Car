@@ -16,7 +16,7 @@ A self driving car implemented based on Deep Q Learning using PyTorch
 
 
 
-9. Q value chosen using softmax
+9. Best Q value chosen using softmax
 10. Output is moving forward or turning in either direction -> 3 outputs to choose from
 
 #TODO
