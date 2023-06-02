@@ -24,7 +24,7 @@ The intention is to toggle the goal when endpoint is reached and vice versa so t
 9. Best Q value chosen using softmax
 10. Output is moving forward or turning in either direction -> 3 outputs to choose from
 
-# TODO
+## TODO
  - [ ] using one track to train and testing learning on others
  - [ ] using multiple tracks to train and test
  - ✅ Dynamic start and endpoint
