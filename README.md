@@ -1,6 +1,10 @@
 # DQN-Reinforcement---Car
 A self driving car implemented based on Deep Q Learning using PyTorch
 
+## How-To Use
+The first click will be the start point and the second click will be the endpoint
+The intention is to toggle the goal when endpoint is reached and vice versa so the Agent goes back and forth
+
 1. Activation function was ReLu
 2. Optimization was performed using Adaptive moments since Create Path.py was used to generate many paths to train over sufficient data
 3. Learning rate was 0.001 kept low initially since no progressive rewards were placed so inefficient reward gain would not be highlighted initially
