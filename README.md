@@ -32,7 +32,7 @@ The intention is to toggle the goal when endpoint is reached and vice versa so t
  - [ ] implement jerk to give variable accel with opposing jerk similar to velocity for better simulation (?)
  - [ ] implement greater goals like a destination and checkpoint rewards
  - ✅ feed self.angle -- greater Error
- - [ ] give penalty for turning 
+ - ✅ give penalty for turning 
  - [ ] pass differential change in radar angle as input
  - [ ] lower degree of rotation per decision
  - ✅ make rewards cumulative
