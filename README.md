@@ -25,15 +25,15 @@ The intention is to toggle the goal when endpoint is reached and vice versa so t
 10. Output is moving forward or turning in either direction -> 3 outputs to choose from
 
 #TODO
-1.  [ ] using one track to train and testing learning on others
-2.  [ ] using multiple tracks to train and test
-3.  [x] Dynamic start and endpoint
-4.  [ ] Prioritized experience replay with priority on the basis of higher error and latest experience also being considered
-5.  [ ] implement jerk to give variable accel with opposing jerk similar to velocity for better simulation (?)
-6.  [ ] implement greater goals like a destination and checkpoint rewards
-7.  [x] feed self.angle -- greater Error
-8.  [ ] give penalty for turning 
-9.  [ ] pass differential change in radar angle as input
-10. [ ] lower degree of rotation per decision
-11. [x] make rewards cumulative
-12. [x] make some radars more important by rewarding based on their inputs
+ - [ ] using one track to train and testing learning on others
+ - [ ] using multiple tracks to train and test
+ - ✅ Dynamic start and endpoint
+ - [ ] Prioritized experience replay with priority on the basis of higher error and latest experience also being considered
+ - [ ] implement jerk to give variable accel with opposing jerk similar to velocity for better simulation (?)
+ - [ ] implement greater goals like a destination and checkpoint rewards
+ - ✅ feed self.angle -- greater Error
+ - [ ] give penalty for turning 
+ - [ ] pass differential change in radar angle as input
+ - [ ] lower degree of rotation per decision
+ - ✅ make rewards cumulative
+ - ✅ make some radars more important by rewarding based on their inputs
