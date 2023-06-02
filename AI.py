@@ -27,9 +27,13 @@ class ExperienceReplay:
 
         self.memory.append(memory_inst)
 
-        # if self.size > len(self.memory):
+        if self.size < len(self.memory):
+            # print("overwrite")
+            del self.memory[0]
+
         # implement deletion logic
-        # todo select experience with least "surprise" or divergence from actual. i.e. the error is lowest
+        # TODO: select experience with least "surprise" or divergence from actual. i.e. the
+        #  error is lowest differently from highest decide ratio for the same -> 8:2 ?
 
     def get_exp_replay(self, batch_size):
         samples = zip(*random.sample(self.memory, batch_size))
@@ -68,6 +72,8 @@ class Network(nn.Module):
         """
         hidden = F.relu(self.full_connect_input_hidden1(state))
         output_q_values = self.full_connect_hidden_output(hidden)
+        # print(output_q_values)
+        # print(output_q_values.dim())
         return output_q_values
 
 
@@ -103,7 +109,7 @@ class DeepQLearn:
         # depending on Q values and randomly selecting at times for a
         # better path in long term than in higher q value in short term
         probs = F.softmax(self.model.forward(state) * 3)
-        # 7 to magnify the pre softmax q values to give more
+        # 3 to magnify the pre softmax q values to give more
         # weight to higher q value when softmax uses natural number
         # exponents
 
@@ -168,7 +174,7 @@ class DeepQLearn:
     def save(self):
         torch.save({'state_dict': self.model.state_dict(),
                     'optimizer': self.optimizer.state_dict(),
-                    }, 'last_brain.pth')
+                    }, 'Brains/3sftmax6inplast_brain.pth')
 
     def load(self, name):
         if os.path.isfile(name):
